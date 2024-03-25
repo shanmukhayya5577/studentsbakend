@@ -14,7 +14,6 @@ app.use(cors());
 require('dotenv').config();
 require('./DB');
 
-
 //imporing routing middleware
 const router = require('./routes/routes');
 app.use('/',router);
