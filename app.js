@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-
 //importing app middleware
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
