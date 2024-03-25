@@ -18,7 +18,10 @@ const router = require('./routes/routes');
 app.use('/',router);
 
 app.get('/',(req,res,next)=>{
-    res.send('Empty path, so page not found')
+    res.status(200).json({
+        messge:'Empty path so nothing',
+        isErroe:false
+    })
 });
 
 module.exports = app;
