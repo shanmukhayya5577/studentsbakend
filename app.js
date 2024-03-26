@@ -3,11 +3,11 @@ const cors = require('cors');
 const app = express();
 
 //importing app middleware
+app.use(cors('*'));                   
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 //Enabling Cors Middleware
-app.use(cors());
 
 //connected BD
 require('dotenv').config();
